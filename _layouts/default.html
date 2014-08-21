@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="content">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    {% if site.use_cdn == "local" %}
+      <script type="text/javascript" src="js/twitterFetcher_v10_min.js"></script>
+      <script type="text/javascript" src="js/scriptbreaker-multiple-accordion-1.js"></script>
+      <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+      <script type="text/javascript" src="js/jquery.backgroundpos.min.js"></script>
+      <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+      <script type="text/javascript" src="js/instafeed.min.js"></script>
+      <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+
+      <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+      <script type="text/javascript" src="js/interstellar.js"></script>
+
+      <script type="text/javascript" src="js/jquery.appear.js"></script>
+      <script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+
+      <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+      <script type="text/javascript" src="js/portfolio_init.js"></script>
+      <script type="text/javascript" src="js/masonry_init.js"></script>
+    {% else %}
+      <script type="text/javascript" src="{{ site.cdn_url}}imrg.{{ site.data.assets.asset_time }}.min.js"></script>
+    {% endif %}
+
+  </body>
+
+</html>
