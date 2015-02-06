@@ -284,7 +284,7 @@ $(document).ready(function () {
 
 
 
-    
+
     $('.counter').appear({
         force_process: true
     });
@@ -468,7 +468,7 @@ $(document).ready(function () {
     //############################## ANIMATIONS #####################################
     //###############################################################################
 
-   
+
     $("[data-liffect]").appear({
         force_process: true
     });
@@ -516,7 +516,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
        $("[data-animate='slideBottom']").appear({
         force_process: true
     });
@@ -534,7 +534,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
       $("[data-animate='slideLeft']").appear({
         force_process: true
     });
@@ -552,7 +552,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
      $("[data-animate='zoomOut']").appear({
         force_process: true
     });
@@ -570,7 +570,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
     $("[data-animate='slideTop']").appear({
         force_process: true
     });
@@ -588,7 +588,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
     $("[data-animate='slideTop']").appear({
         force_process: true
     });
@@ -606,8 +606,8 @@ $(document).ready(function () {
         });
 
     });
-    
-     
+
+
     $("[data-animate='fadeIn']").appear({
         force_process: true
     });
@@ -625,7 +625,7 @@ $(document).ready(function () {
         });
 
     });
-    
+
      $("[data-animate='bounceIn']").appear({
         force_process: true
     });
@@ -690,7 +690,7 @@ $(document).ready(function () {
 
 
     $(".tabs").easyResponsiveTabs({
-        type: 'default', //Types: default, vertical, accordion           
+        type: 'default', //Types: default, vertical, accordion
         width: 'auto', //auto or any custom width
         fit: true, // 100% fits in a container
         closed: false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -699,7 +699,7 @@ $(document).ready(function () {
 
 
     $(".vtabs").easyResponsiveTabs({
-        type: 'vertical', //Types: default, vertical, accordion           
+        type: 'vertical', //Types: default, vertical, accordion
         width: 'auto', //auto or any custom width
         fit: true, // 100% fits in a container
         closed: false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -707,7 +707,7 @@ $(document).ready(function () {
     });
 
     $(".accordion").easyResponsiveTabs({
-        type: 'accordion', //Types: default, vertical, accordion           
+        type: 'accordion', //Types: default, vertical, accordion
         width: 'auto', //auto or any custom width
         fit: true, // 100% fits in a container
         closed: false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -759,7 +759,7 @@ $(document).ready(function () {
     var int_slider = $('.bxslider').bxSlider({
         mode: 'horizontal',
         controls: true,
-        captions: false,
+        captions: true,
         speed: 900,
         autoHover: true,
         prevText: '<i class="icon-left-open-big"><i>',
@@ -767,7 +767,7 @@ $(document).ready(function () {
         auto: false,
         infiniteLoop: true,
         hideControlOnEnd: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         easing: 'easeOutCubic'
     });
 
@@ -776,7 +776,7 @@ $(document).ready(function () {
     }).mouseleave(function () {
         $(this).find('.bx-controls-direction').fadeOut(300);
     });
-    
+
     var thumb_slider = $('.bxthumb').bxSlider({
         mode: 'horizontal',
         controls: true,

@@ -4597,7 +4597,7 @@ $(window).resize(function (event) {
 
 
 
-    
+
     $('.counter').appear({
         force_process: true
     });
@@ -4781,7 +4781,7 @@ $(window).resize(function (event) {
     //############################## ANIMATIONS #####################################
     //###############################################################################
 
-   
+
     $("[data-liffect]").appear({
         force_process: true
     });
@@ -4829,7 +4829,7 @@ $(window).resize(function (event) {
         });
 
     });
-    
+
        $("[data-animate='slideBottom']").appear({
         force_process: true
     });
@@ -4847,7 +4847,7 @@ $(window).resize(function (event) {
         });
 
     });
-    
+
       $("[data-animate='slideLeft']").appear({
         force_process: true
     });
@@ -4865,7 +4865,7 @@ $(window).resize(function (event) {
         });
 
     });
-    
+
      $("[data-animate='zoomOut']").appear({
         force_process: true
     });
@@ -4883,7 +4883,7 @@ $(window).resize(function (event) {
         });
 
     });
-    
+
     $("[data-animate='slideTop']").appear({
         force_process: true
     });
@@ -4901,7 +4901,7 @@ $(window).resize(function (event) {
         });
 
     });
-    
+
     $("[data-animate='slideTop']").appear({
         force_process: true
     });
@@ -4919,8 +4919,8 @@ $(window).resize(function (event) {
         });
 
     });
-    
-     
+
+
     $("[data-animate='fadeIn']").appear({
         force_process: true
     });
@@ -4938,7 +4938,7 @@ $(window).resize(function (event) {
         });
 
     });
-    
+
      $("[data-animate='bounceIn']").appear({
         force_process: true
     });
@@ -5003,7 +5003,7 @@ $(window).resize(function (event) {
 
 
     $(".tabs").easyResponsiveTabs({
-        type: 'default', //Types: default, vertical, accordion           
+        type: 'default', //Types: default, vertical, accordion
         width: 'auto', //auto or any custom width
         fit: true, // 100% fits in a container
         closed: false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -5012,7 +5012,7 @@ $(window).resize(function (event) {
 
 
     $(".vtabs").easyResponsiveTabs({
-        type: 'vertical', //Types: default, vertical, accordion           
+        type: 'vertical', //Types: default, vertical, accordion
         width: 'auto', //auto or any custom width
         fit: true, // 100% fits in a container
         closed: false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -5020,7 +5020,7 @@ $(window).resize(function (event) {
     });
 
     $(".accordion").easyResponsiveTabs({
-        type: 'accordion', //Types: default, vertical, accordion           
+        type: 'accordion', //Types: default, vertical, accordion
         width: 'auto', //auto or any custom width
         fit: true, // 100% fits in a container
         closed: false, // Close the panels on start, the options 'accordion' and 'tabs' keep them closed in there respective view types
@@ -5072,7 +5072,7 @@ $(window).resize(function (event) {
     var int_slider = $('.bxslider').bxSlider({
         mode: 'horizontal',
         controls: true,
-        captions: false,
+        captions: true,
         speed: 900,
         autoHover: true,
         prevText: '<i class="icon-left-open-big"><i>',
@@ -5080,7 +5080,7 @@ $(window).resize(function (event) {
         auto: false,
         infiniteLoop: true,
         hideControlOnEnd: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         easing: 'easeOutCubic'
     });
 
@@ -5089,7 +5089,7 @@ $(window).resize(function (event) {
     }).mouseleave(function () {
         $(this).find('.bx-controls-direction').fadeOut(300);
     });
-    
+
     var thumb_slider = $('.bxthumb').bxSlider({
         mode: 'horizontal',
         controls: true,
@@ -5164,7 +5164,8 @@ function windowResizeEvent (event) {
 
 $(window).resize(windowResizeEvent);
 
-windowResizeEvent();;/**
+windowResizeEvent();
+;/**
  * Isotope v1.5.25
  * An exquisite jQuery plugin for magical layouts
  * http://isotope.metafizzy.co
