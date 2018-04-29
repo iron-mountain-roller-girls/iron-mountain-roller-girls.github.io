@@ -3,15 +3,19 @@ html {
 }
 
 body {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background: url(../img/background.png) no-repeat center center fixed;
     color: #CCC;
+    background-color: #000;
 }
 
-body > .container {
+body > .bg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../img/background.png) repeat-y top center fixed;
+}
+
+body > .bg > .container {
   background: rgba(0,0,0, .55);
   padding: 1rem;
 }
