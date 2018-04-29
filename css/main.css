@@ -1,0 +1,77 @@
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: url(../img/background.png) no-repeat center center fixed;
+}
+
+body {
+    background: rgba(.1,.1,.1, .65);
+    color: #CCC;
+}
+
+header {
+  padding-top: 2rem;
+}
+
+input[type='image'] {
+  max-width: 7rem;
+}
+
+header .logo {
+    max-width: 20rem;
+    margin: auto;
+    display: block;
+}
+
+a {
+  color: rgb(238, 77, 155);
+}
+
+h1 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #EE4D9B;
+}
+
+h2 {
+    color: #888;
+    font-family: 'Exo', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #29AEBD;
+}
+@media (min-width: 768px) {
+  .greeting section {
+    padding-top: 4rem;
+    text-align: right;
+  }
+}
+
+.social {
+    margin-top: 1rem;
+}
+
+.social h2 {
+    text-align: left;
+}
+.social-block {
+  text-align: center;
+  padding: 3rem 0;
+}
+.social-block img {
+  max-width: 7rem;
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #555;
+  text-align: center;
+  background: rgb(8, 8, 8);
+}
