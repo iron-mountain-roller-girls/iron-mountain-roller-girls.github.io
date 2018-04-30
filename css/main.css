@@ -144,6 +144,10 @@ input[type='image']:hover {
 }
 
 .global-banner a {
+  text-decoration: underline;
+}
+
+.global-banner a {
     color: #fff;
 
 }
