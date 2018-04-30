@@ -1,0 +1,23 @@
+{
+  "name": "iron-mountain-roller-girls.github.io",
+  "version": "1.0.0",
+  "description": "iron_mountain_roller_girls ==========================",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"dev": "browser-sync start --server --files \"**/*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iron-mountain-roller-girls/iron-mountain-roller-girls.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iron-mountain-roller-girls/iron-mountain-roller-girls.github.io/issues"
+  },
+  "homepage": "https://github.com/iron-mountain-roller-girls/iron-mountain-roller-girls.github.io#readme"
+}
